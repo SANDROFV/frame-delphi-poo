@@ -1,0 +1,57 @@
+package SDAFRAME;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl;
+
+contains
+  SDAClasseBaseEDT in 'BIBLIOTECA\UNITS GLOBAIS\SDAClasseBaseEDT.pas',
+  SDAGeral in 'BIBLIOTECA\UNITS GLOBAIS\SDAGeral.pas',
+  SDAGraficos in 'BIBLIOTECA\UNITS GLOBAIS\SDAGraficos.pas',
+  SDAHSLUtil in 'BIBLIOTECA\UNITS GLOBAIS\SDAHSLUtil.pas',
+  SDAInterfaces in 'BIBLIOTECA\UNITS GLOBAIS\SDAInterfaces.pas',
+  SDAUtilitarios in 'BIBLIOTECA\UNITS GLOBAIS\SDAUtilitarios.pas',
+  SDAUtils in 'BIBLIOTECA\UNITS GLOBAIS\SDAUtils.pas',
+  XPMenu in 'BIBLIOTECA\UNITS GLOBAIS\XPMenu.pas',
+  frm_Logon in 'COMPONENTE\BD\frm_Logon.pas' {frmLogon},
+  frm_Pesquisa in 'COMPONENTE\BD\frm_Pesquisa.pas' {frmPesquisa},
+  SDABusca in 'COMPONENTE\BD\SDABusca.pas',
+  SDAConexao in 'COMPONENTE\BD\SDAConexao.pas',
+  SDADBGrid in 'COMPONENTE\BD\SDADBGrid.pas',
+  uSDAClientDataSet in 'COMPONENTE\BD\uSDAClientDataSet.pas',
+  uSDADataSet in 'COMPONENTE\BD\uSDADataSet.pas',
+  uSDADataType in 'COMPONENTE\BD\uSDADataType.pas',
+  uSDAParametro in 'COMPONENTE\BD\uSDAParametro.pas',
+  SDACtrlGridButtons in 'COMPONENTE\VISUAL\SDACtrlGridButtons.pas',
+  SDAImagem in 'COMPONENTE\VISUAL\SDAImagem.pas',
+  SDAMenus in 'COMPONENTE\VISUAL\SDAMenus.pas',
+  SDAPainel in 'COMPONENTE\VISUAL\SDAPainel.pas',
+  SDARadioButton in 'COMPONENTE\VISUAL\SDARadioButton.pas';
+
+end.
